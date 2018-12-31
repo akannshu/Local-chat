@@ -13,7 +13,7 @@ var viewer = []
 var io = socket(server);
 
 app.set('view engine', 'ejs')
-app.use(express.static('public'));
+app.use(express.static('static'));
 
 app.get('/room1', function(req,res){
   res.render('index')
